@@ -1,29 +1,29 @@
 <?php
 
-require_once('api.php');
+require_once("api.php");
 
-$tuvasta = $_POST['tuvasta'];
+$tuvasta = $_POST["tuvasta"];
 
 if ($tuvasta == 0){
 	$item = array(
-	"kliendi_nimi" => $_POST['kliendi_nimi'],
-	"aadress" => $_POST['aadress'],
-	"toode" => $_POST['toode'],
-	"makseviis" => $_POST['makseviis'],
-	"kuller" => $_POST['kuller'],
-	"tuvasta" => $_POST['tuvasta']);
+	"kliendi_nimi" => $_POST["kliendi_nimi"],
+	"aadress" => $_POST["aadress"],
+	"toode" => $_POST["toode"],
+	"makseviis" => $_POST["makseviis"],
+	"kuller" => $_POST["kuller"],
+	"tuvasta" => $_POST["tuvasta"]);
 	
 	salvesta_API($item);
 	}
 else {
 	$item = array(
-	"id" => $_POST['id'],
-	"kliendi_nimi" => $_POST['kliendi_nimi'],
-	"aadress" => $_POST['aadress'],
-	"toode" => $_POST['toode'],
-	"makseviis" => $_POST['makseviis'],
-	"kuller" => $_POST['kuller'],
-	"tuvasta" => $_POST['tuvasta']);
+	"id" => $_POST["id"],
+	"kliendi_nimi" => $_POST["kliendi_nimi"],
+	"aadress" => $_POST["aadress"],
+	"toode" => $_POST["toode"],
+	"makseviis" => $_POST["makseviis"],
+	"kuller" => $_POST["kuller"],
+	"tuvasta" => $_POST["tuvasta"]);
 	
 	muuda_API($item);
 	}

@@ -33,7 +33,7 @@
 	</tr>
 	
 	<?php
-	require_once('api.php');
+	require_once("api.php");
 	$items = tellimused_API();
 	
 	foreach ((array) $items as $key => $item) {

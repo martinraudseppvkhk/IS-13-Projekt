@@ -1,5 +1,5 @@
 <?php
-date_default_timezone_set('Europe/Tallinn');
+date_default_timezone_set("Europe/Tallinn");
   
 function salvesta_API($item) {
     $kliendi_nimi = $item["kliendi_nimi"];
