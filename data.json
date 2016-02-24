@@ -1,0 +1,38 @@
+[
+    {
+        "id": "0",
+        "kliendi_nimi": "Martin van Buren",
+        "aadress": "New York",
+        "toode": "Tr\u00fchvlitort",
+        "makseviis": "Sularaha",
+        "kuller": "ei",
+        "aeg": 1456355176
+    },
+    {
+        "id": "1",
+        "kliendi_nimi": "Lyndon B. Johnson",
+        "aadress": "Texas",
+        "toode": "Cannoli",
+        "makseviis": "Sularaha",
+        "kuller": "jah",
+        "aeg": 1456355200
+    },
+    {
+        "id": "2",
+        "kliendi_nimi": "Calvin Coolidge",
+        "aadress": "Massachussets",
+        "toode": "Tr\u00fchvlitort",
+        "makseviis": "Krediitkaart",
+        "kuller": "jah",
+        "aeg": 1456355224
+    },
+    {
+        "id": "3",
+        "kliendi_nimi": "William McKinley",
+        "aadress": "Ohio",
+        "toode": "Vaarika tartalet",
+        "makseviis": "Sularaha",
+        "kuller": "ei",
+        "aeg": 1456355242
+    }
+]
