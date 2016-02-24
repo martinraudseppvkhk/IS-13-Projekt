@@ -1,56 +1,38 @@
-{
-    "0": {
+[
+    {
         "id": "0",
         "kliendi_nimi": "Martin van Buren",
         "aadress": "New York",
         "toode": "Tr\u00fchvlitort",
         "makseviis": "Sularaha",
         "kuller": "ei",
-        "aeg": 1456355176
+        "aeg": 1456356116
     },
-    "1": {
+    {
         "id": "1",
         "kliendi_nimi": "Lyndon B. Johnson",
         "aadress": "Texas",
         "toode": "Cannoli",
         "makseviis": "Sularaha",
         "kuller": "jah",
-        "aeg": 1456355200
+        "aeg": 1456356127
     },
-    "2": {
+    {
         "id": "2",
         "kliendi_nimi": "Calvin Coolidge",
         "aadress": "Massachussets",
-        "toode": "Tr\u00fchvlitort",
+        "toode": "Belgia kohupiimatort",
         "makseviis": "Krediitkaart",
         "kuller": "jah",
-        "aeg": 1456355224
+        "aeg": 1456356142
     },
-    "4": {
-        "id": 4,
-        "kliendi_nimi": "James McNeil",
-        "aadress": "Holyvillage",
-        "toode": "Tr\u00fchvlitort",
+    {
+        "id": "3",
+        "kliendi_nimi": "James Bucchanan",
+        "aadress": "Pennsylvania",
+        "toode": "Vaarika tartalet",
         "makseviis": "Krediitkaart",
         "kuller": "ei",
-        "aeg": 1456355827
-    },
-    "5": {
-        "id": "5",
-        "kliendi_nimi": "Hope McKayden",
-        "aadress": "Ogdenville",
-        "toode": "Tr\u00fchvlitort",
-        "makseviis": "Krediitkaart",
-        "kuller": "ei",
-        "aeg": 1456355846
-    },
-    "6": {
-        "id": "6",
-        "kliendi_nimi": "Joan McMonroe",
-        "aadress": "Osama",
-        "toode": "Tr\u00fchvlitort",
-        "makseviis": "Sularaha",
-        "kuller": "jah",
-        "aeg": 1456355967
+        "aeg": 1456356181
     }
-}
+]
