@@ -47,33 +47,22 @@ else {
 </div>
 
 <?php
-
-if ($tuvasta == 0){?>
-<div class="container">
-  <h2>E-PAGAR</h2>
-  <form role="form" action="form.html" method="get"><br><br>
-  
-  <p><b>Täname! Teie arve saabub peatselt!</b></p>
-  
-  <button type="submit" class="btn btn-default">Tagasi</button>
-  </form>
-</div>
-</body>
-</html>
-<?php
+if ($tuvasta == 0) {
+  print '<div class="container">
+           <h2>E-PAGAR</h2>
+           <form role="form" action="form.html" method="get"><br><br>
+             <p><b>Täname! Teie arve saabub peatselt!</b></p>
+             <button type="submit" class="btn btn-default">Tagasi</button>
+           </form>
+           </div>';
 }
-else {?>
-<div class="container">
-  <h2>E-PAGAR</h2>
-  <form role="form" action="index.php" method="get"><br><br>
-  
-  <p><b>Tellimus on muudetud!</b></p>
-  
-  <button type="submit" class="btn btn-default">Tagasi</button>
-  </form>
-</div>
-</body>
-</html>
-<?php
+else {
+  print '<div class="container">
+           <h2>E-PAGAR</h2>
+           <form role="form" action="index.php" method="get"><br><br>
+             <p><b>Tellimus on muudetud!</b></p>
+             <button type="submit" class="btn btn-default">Tagasi</button>
+           </form>
+         </div>';
 }
 ?>

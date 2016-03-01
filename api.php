@@ -2,17 +2,16 @@
 date_default_timezone_set("Europe/Tallinn");
   
 function salvesta_API($item) {
-    $kliendi_nimi = $item["kliendi_nimi"];
-    $aadress = $item["aadress"];
-    $toode = $item["toode"];
-    $makseviis = $item["makseviis"];
-    $kuller = $item["kuller"];
+	$kliendi_nimi = $item["kliendi_nimi"];
+	$aadress = $item["aadress"];
+	$toode = $item["toode"];
+	$makseviis = $item["makseviis"];
+	$kuller = $item["kuller"];
 
-    $id = file_get_contents("id.txt");
-	$aeg = time();
-	// date("d.m.Y h:i:s");
+	$id = file_get_contents("id.txt");
+	$aeg = strftime("%d.%m.%Y %X");
 
-	$data = json_decode(file_get_contents("data.json"), 2);
+	$data = json_decode(file_get_contents("data.json"), true);
 
 	$data[] = array(
 		"id" => $id,
@@ -31,26 +30,24 @@ function salvesta_API($item) {
 	return true;
 }
 
-function vaata_API() {
+function vaata_API($key) {
 
 	$item = json_decode(file_get_contents("data.json"), true);
-	$item = $item[$_GET["key"]];
-	
-	return $item;
+	$item = $item[$key];    
+	return $item; 
 	
 }
 
 function muuda_API($item) {
 	$id = $item["id"];
-    $kliendi_nimi = $item["kliendi_nimi"];
-    $aadress = $item["aadress"];
-    $toode = $item["toode"];
-    $makseviis = $item["makseviis"];
-    $kuller = $item["kuller"];
-	
+	$kliendi_nimi = $item["kliendi_nimi"];
+	$aadress = $item["aadress"];
+	$toode = $item["toode"];
+	$makseviis = $item["makseviis"];
+	$kuller = $item["kuller"];
+
 	$id = intval($id);
-	$aeg = time();
-	// date("d.m.Y h:i:s");
+	$aeg = strftime("%d.%m.%Y %X");
 
 	$data = json_decode(file_get_contents("data.json"), true);
 
@@ -71,22 +68,20 @@ function muuda_API($item) {
 
 function kustuta_API($id) {
 
-	$array1 = json_decode(file_get_contents("data.json"), true);
-	$array2 = $array1[$_GET["key"]];
-	$id_nr = intval($array2["id"]);
-	unset($array1[$id_nr]);
-	file_put_contents("data.json", json_encode($array1));
+	$item = json_decode(file_get_contents("data.json"), true);
+	$id = $id["id"];
+	$item[$id] = [];
 	
+	file_put_contents("data.json", json_encode($item, JSON_PRETTY_PRINT));
+	
+	return true;
 }
 
 function tellimused_API() {
 
-	$items = json_decode(file_get_contents("data.json"), 2);
-	if(is_array($items)) {
-		foreach($items as $key => $item)
-		
-	return $items;
-	}
+	$items = json_decode(file_get_contents("data.json"), true);
+	
+	return $items;	
 }
 	
 ?>
