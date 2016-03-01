@@ -37,6 +37,7 @@
 	$items = tellimused_API();
 	
 	foreach ((array) $items as $key => $item) {
+		if ($item != NULL){
 	?>
 			<tr>
 				<td><?=$item["kliendi_nimi"]?></td>
@@ -46,6 +47,7 @@
 			</tr>
 			<?php
 		}
+	}
 	?>
 </table>
 </div>

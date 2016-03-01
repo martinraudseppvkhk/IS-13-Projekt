@@ -1,38 +1,47 @@
 [
     {
         "id": "0",
-        "kliendi_nimi": "Martin van Buren",
-        "aadress": "New York",
+        "kliendi_nimi": "James Monroe",
+        "aadress": "Virginia",
         "toode": "Tr\u00fchvlitort",
         "makseviis": "Sularaha",
-        "kuller": "ei",
-        "aeg": 1456356116
+        "kuller": "jah",
+        "aeg": "01.03.2016 19:04:47"
     },
     {
         "id": "1",
-        "kliendi_nimi": "Lyndon B. Johnson",
-        "aadress": "Texas",
-        "toode": "Cannoli",
+        "kliendi_nimi": "Martin van Buren",
+        "aadress": "New York",
+        "toode": "Belgia kohupiimatort",
         "makseviis": "Sularaha",
         "kuller": "jah",
-        "aeg": 1456356127
+        "aeg": "01.03.2016 19:05:11"
     },
     {
-        "id": "2",
-        "kliendi_nimi": "Calvin Coolidge",
-        "aadress": "Massachussets",
+        "id": 2,
+        "kliendi_nimi": "John Tyler",
+        "aadress": "Virginia",
         "toode": "Belgia kohupiimatort",
         "makseviis": "Krediitkaart",
         "kuller": "jah",
-        "aeg": 1456356142
+        "aeg": "01.03.2016 19:09:54"
     },
     {
         "id": "3",
-        "kliendi_nimi": "James Bucchanan",
-        "aadress": "Pennsylvania",
-        "toode": "Vaarika tartalet",
+        "kliendi_nimi": "Zachary Taylor",
+        "aadress": "Louisiana",
+        "toode": "Cannoli",
         "makseviis": "Krediitkaart",
         "kuller": "ei",
-        "aeg": 1456356181
+        "aeg": "01.03.2016 19:05:44"
+    },
+    {
+        "id": 4,
+        "kliendi_nimi": "Andrew Johnson",
+        "aadress": "Tennessee",
+        "toode": "Vaarika tartalet",
+        "makseviis": "Sularaha",
+        "kuller": "ei",
+        "aeg": "01.03.2016 19:06:52"
     }
 ]
