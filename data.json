@@ -1,47 +1,38 @@
 [
     {
         "id": "0",
-        "kliendi_nimi": "James Monroe",
-        "aadress": "Virginia",
-        "toode": "Tr\u00fchvlitort",
+        "kliendi_nimi": "Martin Raudsepp",
+        "aadress": "Valgamaa",
+        "toode": "Belgia kohupiimatort",
         "makseviis": "Sularaha",
-        "kuller": "jah",
-        "aeg": "01.03.2016 19:04:47"
+        "kuller": "ei",
+        "aeg": "08.03.2016 19:31:56"
     },
     {
         "id": "1",
-        "kliendi_nimi": "Martin van Buren",
-        "aadress": "New York",
-        "toode": "Belgia kohupiimatort",
-        "makseviis": "Sularaha",
-        "kuller": "jah",
-        "aeg": "01.03.2016 19:05:11"
-    },
-    {
-        "id": 2,
-        "kliendi_nimi": "John Tyler",
-        "aadress": "Virginia",
-        "toode": "Belgia kohupiimatort",
+        "kliendi_nimi": "Siim Aarmaa",
+        "aadress": "Antsla",
+        "toode": "Vaarika tartalet",
         "makseviis": "Krediitkaart",
         "kuller": "jah",
-        "aeg": "01.03.2016 19:09:54"
+        "aeg": "08.03.2016 19:32:09"
+    },
+    {
+        "id": "2",
+        "kliendi_nimi": "Tailo Hallap",
+        "aadress": "P\u00f5lvamaa",
+        "toode": "Tr\u00fchvlitort",
+        "makseviis": "Krediitkaart",
+        "kuller": "ei",
+        "aeg": "08.03.2016 19:32:19"
     },
     {
         "id": "3",
-        "kliendi_nimi": "Zachary Taylor",
-        "aadress": "Louisiana",
+        "kliendi_nimi": "Rain Traagel",
+        "aadress": "V\u00f5rumaa",
         "toode": "Cannoli",
-        "makseviis": "Krediitkaart",
-        "kuller": "ei",
-        "aeg": "01.03.2016 19:05:44"
-    },
-    {
-        "id": 4,
-        "kliendi_nimi": "Andrew Johnson",
-        "aadress": "Tennessee",
-        "toode": "Vaarika tartalet",
         "makseviis": "Sularaha",
-        "kuller": "ei",
-        "aeg": "01.03.2016 19:06:52"
+        "kuller": "jah",
+        "aeg": "08.03.2016 19:32:36"
     }
 ]
