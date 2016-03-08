@@ -65,7 +65,6 @@ function muuda_API($item) {
 	return true;
 }
 
-
 function kustuta_API($id) {
 
 	$item = json_decode(file_get_contents("data.json"), true);
@@ -77,11 +76,10 @@ function kustuta_API($id) {
 	return true;
 }
 
-function tellimused_API() {
+function list_API() {
 
 	$items = json_decode(file_get_contents("data.json"), true);
 	
 	return $items;	
 }
-	
 ?>

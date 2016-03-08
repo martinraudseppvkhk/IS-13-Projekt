@@ -34,7 +34,7 @@
 	
 	<?php
 	require_once("api.php");
-	$items = tellimused_API();
+	$items = list_API();
 	
 	foreach ((array) $items as $key => $item) {
 		if ($item != NULL){
