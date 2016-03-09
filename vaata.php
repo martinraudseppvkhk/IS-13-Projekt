@@ -40,19 +40,19 @@ $item = vaata_API($_GET["key"]);
 		<th>ID: </th><td><?=$item["id"]?></td>
 	</tr>
 	<tr>
-		<th>Kliendi nimi: </th><td><?=$item["kliendi_nimi"]?></td>
+		<th>Kliendi nimi: </th><td><?=$item["arg1"]?></td>
 	</tr>
 	<tr>
-		<th>Aadress: </th><td><?=$item["aadress"]?></td>
+		<th>Aadress: </th><td><?=$item["arg2"]?></td>
 	</tr>
 	<tr>
-		<th>Toode: </th><td><?=$item["toode"]?></td>
+		<th>Toode: </th><td><?=$item["arg3"]?></td>
 	</tr>
 	<tr>
-		<th>Makseviis: </th><td><?=$item["makseviis"]?></td>
+		<th>Makseviis: </th><td><?=$item["arg4"]?></td>
 	</tr>
 	<tr>
-		<th>Ekspresskuller: </th><td><?=$item["kuller"]?></td>
+		<th>Ekspresskuller: </th><td><?=$item["arg5"]?></td>
 	</tr>
 	<tr>
 		<th>Kirje lisamise aeg: </th><td><?=$item["aeg"]?></td>

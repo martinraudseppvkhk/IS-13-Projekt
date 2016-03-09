@@ -33,17 +33,17 @@ $item = vaata_API($_GET["key"]);
 	
 	<div class="form-group">
       <label for="name">Kliendi nimi</label>
-      <input name="kliendi_nimi" type="text" class="form-control" id="kliendi_nimi" value="<?=$item["kliendi_nimi"]?>">
+      <input name="arg1" type="text" class="form-control" id="arg1" value="<?=$item["arg1"]?>">
     </div>
     
 	<div class="form-group">
       <label for="comment">Kliendi aadress</label>
-       <textarea name="aadress" class="form-control" rows="5" id="aadress"><?=$item["aadress"]?></textarea>
+       <textarea name="arg2" class="form-control" rows="5" id="arg2"><?=$item["arg2"]?></textarea>
     </div>
      
 	 <div class="form-group">
   <label for="sel1">Toode:</label>
-  <select name="toode" class="form-control" id="toode">
+  <select name="arg3" class="form-control" id="arg3">
     <option>Trühvlitort</option>
     <option>Belgia kohupiimatort</option>
     <option>Vaarika tartalet</option>
@@ -53,14 +53,14 @@ $item = vaata_API($_GET["key"]);
     
 	<div class="radio">
 		<strong>Makseviis:</strong><br>
-  <label><input type="radio" name="makseviis" value="Krediitkaart" checked>Krediitkaart</label>
-  <label><input type="radio" name="makseviis" value="Sularaha">Sularaha</label>
+  <label><input type="radio" name="arg4" value="arg4" checked>Krediitkaart</label>
+  <label><input type="radio" name="arg4" value="arg4">Sularaha</label>
    </div><br>
    
    <p><b>Muud võimalused:</b>
     <div class="checkbox">
-	<label><input type="hidden" id="kuller" name="kuller" value="ei"></label>
-      <label><input type="checkbox" id="kuller" name="kuller" value="jah">Ekspresskuller</label>
+	<label><input type="hidden" id="arg5" name="arg5" value="ei"></label>
+    <label><input type="checkbox" id="arg5" name="arg5" value="jah">Ekspresskuller</label>
     </div><br>
 	
 	<input type="hidden" id="tuvasta" name="tuvasta" value=1> 
