@@ -2,11 +2,11 @@
 date_default_timezone_set("Europe/Tallinn");
   
 function salvesta_API($item) {
-	$kliendi_nimi = $item["kliendi_nimi"];
-	$aadress = $item["aadress"];
-	$toode = $item["toode"];
-	$makseviis = $item["makseviis"];
-	$kuller = $item["kuller"];
+	$arg1 = $item["arg1"];
+	$arg2 = $item["arg2"];
+	$arg3 = $item["arg3"];
+	$arg4 = $item["arg4"];
+	$arg5 = $item["arg5"];
 
 	$id = file_get_contents("id.txt");
 	$aeg = strftime("%d.%m.%Y %X");
@@ -15,11 +15,11 @@ function salvesta_API($item) {
 
 	$data[] = array(
 		"id" => $id,
-		"kliendi_nimi" => $kliendi_nimi,
-		"aadress" => $aadress,
-		"toode" => $toode,
-		"makseviis" => $makseviis,
-		"kuller" => $kuller,
+		"arg1" => $arg1,
+		"arg2" => $arg2,
+		"arg3" => $arg3,
+		"arg4" => $arg4,
+		"arg5" => $arg5,
 		"aeg" => $aeg,);
 
 	file_put_contents("data.json", json_encode($data, JSON_PRETTY_PRINT));
@@ -40,11 +40,11 @@ function vaata_API($key) {
 
 function muuda_API($item) {
 	$id = $item["id"];
-	$kliendi_nimi = $item["kliendi_nimi"];
-	$aadress = $item["aadress"];
-	$toode = $item["toode"];
-	$makseviis = $item["makseviis"];
-	$kuller = $item["kuller"];
+	$arg1 = $item["arg1"];
+	$arg2 = $item["arg2"];
+	$arg3 = $item["arg3"];
+	$arg4 = $item["arg4"];
+	$arg5 = $item["arg5"];
 
 	$id = intval($id);
 	$aeg = strftime("%d.%m.%Y %X");
@@ -53,11 +53,11 @@ function muuda_API($item) {
 
 	$data[$id] = array(
 		"id" => $id,
-		"kliendi_nimi" => $kliendi_nimi,
-		"aadress" => $aadress,
-		"toode" => $toode,
-		"makseviis" => $makseviis,
-		"kuller" => $kuller,
+		"arg1" => $arg1,
+		"arg2" => $arg2,
+		"arg3" => $arg3,
+		"arg4" => $arg4,
+		"arg5" => $arg5,
 		"aeg" => $aeg,);
 
 	file_put_contents("data.json", json_encode($data, JSON_PRETTY_PRINT));

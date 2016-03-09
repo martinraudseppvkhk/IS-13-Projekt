@@ -6,11 +6,11 @@ $tuvasta = $_POST["tuvasta"];
 
 if ($tuvasta == 0){
 	$item = array(
-	"kliendi_nimi" => $_POST["kliendi_nimi"],
-	"aadress" => $_POST["aadress"],
-	"toode" => $_POST["toode"],
-	"makseviis" => $_POST["makseviis"],
-	"kuller" => $_POST["kuller"],
+	"arg1" => $_POST["arg1"],
+	"arg2" => $_POST["arg2"],
+	"arg3" => $_POST["arg3"],
+	"arg4" => $_POST["arg4"],
+	"arg5" => $_POST["arg5"],
 	"tuvasta" => $_POST["tuvasta"]);
 	
 	salvesta_API($item);
@@ -18,11 +18,11 @@ if ($tuvasta == 0){
 else {
 	$item = array(
 	"id" => $_POST["id"],
-	"kliendi_nimi" => $_POST["kliendi_nimi"],
-	"aadress" => $_POST["aadress"],
-	"toode" => $_POST["toode"],
-	"makseviis" => $_POST["makseviis"],
-	"kuller" => $_POST["kuller"],
+	"arg1" => $_POST["arg1"],
+	"arg2" => $_POST["arg2"],
+	"arg3" => $_POST["arg3"],
+	"arg4" => $_POST["arg4"],
+	"arg5" => $_POST["arg5"],
 	"tuvasta" => $_POST["tuvasta"]);
 	
 	muuda_API($item);
