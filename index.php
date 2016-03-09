@@ -40,7 +40,7 @@
 		if ($item != NULL){
 	?>
 			<tr>
-				<td><?=$item["kliendi_nimi"]?></td>
+				<td><?=$item["arg1"]?></td>
 				<td><a href="vaata.php?key=<?=$key?>"><?="Vaata"?></a></td>
 				<td><a href="muuda.php?key=<?=$key?>"><?="Muuda"?></a></td>
 				<td><a href="kustuta.php?key=<?=$key?>"><?="Kustuta"?></a></td>
